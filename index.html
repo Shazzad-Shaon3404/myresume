@@ -34,10 +34,11 @@
     text-align-last: left;
 }
 
+
 @media print {
     @page {
-        size: letter;
-        margin: 0.55in;
+        size: A3 portrait;
+        margin: 15mm;
     }
 
     html, body {
@@ -55,16 +56,15 @@
     .section {
         break-inside: auto !important;
         page-break-inside: auto !important;
-        margin-bottom: 12px;
+        margin-bottom: 14px;
     }
 
-    .section h2,
-    .section h3 {
+    h2, h3 {
         break-after: avoid;
         page-break-after: avoid;
     }
 
-    .section li {
+    li {
         break-inside: avoid;
         page-break-inside: avoid;
     }
