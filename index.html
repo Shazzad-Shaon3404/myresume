@@ -33,6 +33,53 @@
     line-height: 1.7;
     text-align-last: left;
 }
+
+@media print {
+    @page {
+        size: letter;
+        margin: 0.55in;
+    }
+
+    html, body {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .page {
+        width: 100% !important;
+        max-width: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .section {
+        break-inside: auto !important;
+        page-break-inside: auto !important;
+        margin-bottom: 12px;
+    }
+
+    .section h2,
+    .section h3 {
+        break-after: avoid;
+        page-break-after: avoid;
+    }
+
+    .section li {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    p {
+        orphans: 3;
+        widows: 3;
+    }
+}
+
+
+
+
+
+    
   </style>
 </head>
 <body>
