@@ -42,24 +42,19 @@
         margin: 15mm;
     }
 
-    .print-new-page {
-        break-before: page !important;
-        page-break-before: always !important;
-        break-inside: auto !important;
+    .peer-review-section {
+        break-before: auto !important;
+        page-break-before: auto !important;
     }
 
-    .section h2,
-    .section h3 {
-        break-after: avoid-page !important;
-        page-break-after: avoid !important;
-    }
-
-    .section > p {
+    .peer-review-section h2,
+    .peer-review-section > p {
         break-after: avoid-page;
+        page-break-after: avoid;
     }
 
-    .section li {
-        break-inside: avoid-page;
+    .peer-review-section li {
+        break-inside: avoid;
         page-break-inside: avoid;
     }
 }
